@@ -1,0 +1,37 @@
+#
+#    SPDX-License-Identifier: Apache-2.0
+#
+
+explorer_1/scripts/bower_components/
+explorer_1/webcontent
+
+node_modules
+
+.idea/*
+venv
+.vscode
+
+test/*
+tmp/*
+
+logs
+.log
+log.log
+
+fabric-docker-compose-svt/channel-artifacts
+fabric-docker-compose-svt/crypto-config
+first-network/channel-artifacts/*
+# examples/*
+tmp/wallet/*
+wallet/*
+*.swp
+package-lock.json
+ssl-certs/*.pem
+ssl-certs/*.csr
+0
+app/test/.nyc_output/
+docs/build/
+_build
+# _static
+_templates
+*.DS_Store

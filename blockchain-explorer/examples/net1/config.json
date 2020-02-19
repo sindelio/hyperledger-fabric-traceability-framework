@@ -1,0 +1,9 @@
+{
+	"network-configs": {
+		"traceability-network": {
+			"name": "traceability-network",
+			"profile": "./connection-profile/traceability-network.json"
+		}
+	},
+	"license": "Apache-2.0"
+}
