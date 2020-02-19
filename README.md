@@ -643,4 +643,4 @@ All contributions are much welcome!
 
 ## 11. LICENSE
 
-[MIT](LICENSE.md)
+[MIT](https://github.com/sindelio/hyperledger-fabric-traceability-framework/blob/master/LICENSE)
