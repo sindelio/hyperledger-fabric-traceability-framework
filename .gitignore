@@ -1,0 +1,16 @@
+# blockchain-network
+blockchain-network/crypto-config/*
+blockchain-network/channel-artifacts/*.tx
+blockchain-network/channel-artifacts/*.block
+blockchain-network/channel-artifacts/*.json
+blockchain-network/ledgers
+blockchain-network/ledgers-backup
+blockchain-network/core/
+
+# chaincode
+chaincode/node_modules
+
+# apps
+apps/identity/
+apps/lib/node_modules
+apps/server/node_modules

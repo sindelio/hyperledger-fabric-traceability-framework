@@ -1,0 +1,20 @@
+{
+	"name": "traceability-chaincode",
+	"version": "1.0.0",
+	"description": "Traceability chain code (set of smart contracts)",
+	"main": "index.js",
+	"engines": {
+		"node": ">=8",
+		"npm": ">=5"
+	},
+	"scripts": {
+		"start": "fabric-chaincode-node start"
+	},
+	"engineStrict": true,
+	"author": "sindelio@gmail.com",
+	"license": "MIT",
+	"dependencies": {
+		"fabric-contract-api": "~1.4.2",
+		"fabric-shim": "~1.4.2"
+	}
+}

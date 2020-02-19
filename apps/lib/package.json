@@ -1,0 +1,12 @@
+{
+  "name": "smart-contract-connector",
+  "version": "1.0.0",
+  "description": "Library to connect to chaincode deployed in a running Fabric network",
+  "author": "sindelio@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "fabric-client": "1.4.x",
+    "fabric-network": "1.4.x",
+    "js-yaml": "^3.12.0"
+  }
+}
