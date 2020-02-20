@@ -62,7 +62,7 @@ Explorer provides a Graphical User Interface - GUI, to visualize
 all important entities in the network, such as organizations, peers, chaincodes, channels and transactions.
 - Convenience scripts to install and run the framework.
 - HTTP server communicating with the Blockchain network. This server can be hosted in the cloud
-in order to handle requests from client apps.
+in order to handle requests from client apps. The server is written in JavaScript, with Express.js. 
 - Authentication with Json Web Token - JWT.
 - Input data validation with Joi/Celebrate.
 - Basic error handling.
@@ -76,6 +76,7 @@ to the Blockchain network.
 there's only one static identity that the HTTP server uses to communicate with the Blockchain network.
 - Implement unit tests for the smart contract functions.
 - Implement end-to-end tests for the HTTP server all the way down to the Blockchain network.
+- Implement a sample UI to interact with the sample chaincode.
 
 ## 5. PRE-REQUISITES
 
