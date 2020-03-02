@@ -56,7 +56,7 @@ found in the fabric-samples directory of the [official examples for Hyperledger 
 The framework should work well with little to no changes for versions 1.4.3 and 1.4.4 as well.
 - Rich data operations with CouchDB, instead of the default database LevelDB.
 - Raft ordering service.
-- Chaincode fully written in Javascript, using Node.js as the running environment.
+- Chaincode fully written in JavaScript, using Node.js as the running environment.
 - Hyperledger Explorer attached to the Blockchain network.
 Explorer provides a Graphical User Interface - GUI, to visualize
 all important entities in the network, such as organizations, peers, chaincodes, channels and transactions.
