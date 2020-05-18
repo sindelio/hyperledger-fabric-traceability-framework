@@ -4,27 +4,27 @@
 
 - [TRACEABILITY FRAMEWORK](#traceability-framework)
   - [1. OVERVIEW](#1-overview)
-  - [3. FEATURES](#3-features)
-  - [4. FUTURE WORK](#4-future-work)
-  - [5. PRE-REQUISITES](#5-pre-requisites)
-  - [6. SETUP](#6-setup)
-    - [6.1. Install Hyperledger Fabric binaries and Docker images](#61-install-hyperledger-fabric-binaries-and-docker-images)
-  - [7. QUICK STARTUP](#7-quick-startup)
-    - [7.1. Quickly run the Blockchain network, Blockchain Explorer and HTTP server](#71-quickly-run-the-blockchain-network-blockchain-explorer-and-http-server)
-  - [8. STEP BY STEP STARTUP](#8-step-by-step-startup)
-    - [8.1. Download the project](#81-download-the-project)
-    - [8.2. Generate the blockchain network](#82-generate-the-blockchain-network)
-    - [8.3. Install the chaincode dependencies](#83-install-the-chaincode-dependencies)
-    - [8.4. Start the blockchain network](#84-start-the-blockchain-network)
-    - [8.4. Start the Hyperledger Explorer GUI](#84-start-the-hyperledger-explorer-gui)
-    - [8.5. Install the dependencies for the connector between the HTTP server and the Blockchain network](#85-install-the-dependencies-for-the-connector-between-the-http-server-and-the-blockchain-network)
-    - [8.6. Create a static identity able to execute transactions from client applications](#86-create-a-static-identity-able-to-execute-transactions-from-client-applications)
-    - [8.7. Install the HTTP server dependencies](#87-install-the-http-server-dependencies)
-    - [8.8. Start the HTTP server](#88-start-the-http-server)
-    - [8.9. Execute transactions in the Blockchain network](#89-execute-transactions-in-the-blockchain-network)
-  - [9. TROUBLESHOOTING](#9-troubleshooting)
-  - [10. CONTRIBUTING](#10-contributing)
-  - [11. LICENSE](#11-license)
+  - [2. FEATURES](#2-features)
+  - [3. FUTURE WORK](#3-future-work)
+  - [4. PRE-REQUISITES](#4-pre-requisites)
+  - [5. SETUP](#5-setup)
+    - [5.1. Install Hyperledger Fabric binaries and Docker images](#51-install-hyperledger-fabric-binaries-and-docker-images)
+  - [6. QUICK STARTUP](#6-quick-startup)
+    - [6.1. Quickly run the Blockchain network, Blockchain Explorer and HTTP server](#61-quickly-run-the-blockchain-network-blockchain-explorer-and-http-server)
+  - [7. STEP BY STEP STARTUP](#7-step-by-step-startup)
+    - [7.1. Download the project](#71-download-the-project)
+    - [7.2. Generate the blockchain network](#72-generate-the-blockchain-network)
+    - [7.3. Install the chaincode dependencies](#73-install-the-chaincode-dependencies)
+    - [7.4. Start the blockchain network](#74-start-the-blockchain-network)
+    - [7.5. Start the Hyperledger Explorer GUI](#75-start-the-hyperledger-explorer-gui)
+    - [7.6. Install the dependencies for the connector between the HTTP server and the Blockchain network](#76-install-the-dependencies-for-the-connector-between-the-http-server-and-the-blockchain-network)
+    - [7.7. Create a static identity able to execute transactions from client applications](#77-create-a-static-identity-able-to-execute-transactions-from-client-applications)
+    - [7.8. Install the HTTP server dependencies](#78-install-the-http-server-dependencies)
+    - [7.9. Start the HTTP server](#79-start-the-http-server)
+    - [7.10. Execute transactions in the Blockchain network](#710-execute-transactions-in-the-blockchain-network)
+  - [8. TROUBLESHOOTING](#8-troubleshooting)
+  - [9. CONTRIBUTING](#9-contributing)
+  - [10. LICENSE](#10-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -50,7 +50,7 @@ found in the fabric-samples directory of the [official examples for Hyperledger 
 
 [The official documentation for Hyperledger Fabric can be found here.](https://hyperledger-fabric.readthedocs.io/en/release-1.4/)
 
-## 3. FEATURES
+## 2. FEATURES
 
 - Version 1.4.2 of Hyperledger binaries and Docker images.
 The framework should work well with little to no changes for versions 1.4.3 and 1.4.4 as well.
@@ -69,7 +69,7 @@ in order to handle requests from client apps. The server is written in JavaScrip
 - Postman collection and environment for convenience when making requests to the HTTP server, and hence
 to the Blockchain network.
 
-## 4. FUTURE WORK
+## 3. FUTURE WORK
 
 - Migrate to version 2.0 of Hyperledger binaries and Docker images.
 - Implement certificate authorities to handle identities in the network. At the moment,
@@ -78,7 +78,7 @@ there's only one static identity that the HTTP server uses to communicate with t
 - Implement end-to-end tests for the HTTP server all the way down to the Blockchain network.
 - Implement a sample UI to interact with the sample chaincode.
 
-## 5. PRE-REQUISITES
+## 4. PRE-REQUISITES
 
 - [Ubuntu 16.04 Long Term Support - LTS](http://br.releases.ubuntu.com/16.04/).
 The target Operating System - OS, for the project is Ubuntu 16.04 LTS, and it should work
@@ -119,9 +119,9 @@ These dependencies can be installed with the `install-requisites.sh`:
   ./install-requisites.sh
 ```
 
-## 6. SETUP
+## 5. SETUP
 
-### 6.1. Install Hyperledger Fabric binaries and Docker images
+### 5.1. Install Hyperledger Fabric binaries and Docker images
 
 Use the bash script `install-fabric.sh` to download the Hyperledger Fabric
 binaries and Docker images:
@@ -146,9 +146,9 @@ You can check the binaries at `~/go/fabric-samples/bin`, and the
 
 Now you are ready to start interacting with the Fabric blockchain network.
 
-## 7. QUICK STARTUP
+## 6. QUICK STARTUP
 
-### 7.1. Quickly run the Blockchain network, Blockchain Explorer and HTTP server
+### 6.1. Quickly run the Blockchain network, Blockchain Explorer and HTTP server
 
 For a quick startup, run:
 
@@ -175,9 +175,9 @@ Credentials:
 Although the quick start script is convenient, I'll recommend
  you study the startup process step by step in the following section.
 
-## 8. STEP BY STEP STARTUP
+## 7. STEP BY STEP STARTUP
 
-### 8.1. Download the project
+### 7.1. Download the project
 
 Move to the `~/go` directory:
 
@@ -197,7 +197,7 @@ Using SSH:
   git clone git@github.com:sindelio/traceability-framework.git
 ```
 
-### 8.2. Generate the blockchain network
+### 7.2. Generate the blockchain network
 
 Move to the `blockchain-network` directory:
 
@@ -291,7 +291,7 @@ It should print an output similar to the following:
   + set +x
 ```
 
-### 8.3. Install the chaincode dependencies
+### 7.3. Install the chaincode dependencies
 
 Move to `~/go/traceability-framework/chaincode`:
 
@@ -308,7 +308,7 @@ Install the Node.js modules required by the chaincode:
 This step has to be done before starting the Blockchain network, or else the chaincode 
 will not have its dependencies when being installed and instantiated in the Blockchain network.
 
-### 8.4. Start the blockchain network
+### 7.4. Start the blockchain network
 
 Move to `~/go/traceability-framework/blockchain-network/`, start the network with:
 
@@ -465,7 +465,7 @@ The logs should look like:
   |_____| |_| \_| |____/
 ```
 
-### 8.4. Start the Hyperledger Explorer GUI
+### 7.5. Start the Hyperledger Explorer GUI
 
 Move to `~/go/traceability-framework/blockchain-explorer/`:
 
@@ -494,7 +494,7 @@ Credentials to log in the `traceability-framework` network:
   - Login: `hppoc`
   - Password: `password`
 
-### 8.5. Install the dependencies for the connector between the HTTP server and the Blockchain network
+### 7.6. Install the dependencies for the connector between the HTTP server and the Blockchain network
 
 Move to `~/go/traceability-framework/apps/lib`:
 
@@ -508,7 +508,7 @@ Install the Node.js modules required by the HTTP server:
   yarn install
 ```
 
-### 8.6. Create a static identity able to execute transactions from client applications
+### 7.7. Create a static identity able to execute transactions from client applications
 
 Still in `~/go/traceability-framework/apps/lib`, run:
 
@@ -524,7 +524,7 @@ The log is:
   Identity User1@org1.example.com created at ../identity/user1/wallet
 ```
 
-### 8.7. Install the HTTP server dependencies
+### 7.8. Install the HTTP server dependencies
 
 Move to `~/go/traceability-framework/apps/server`:
 
@@ -538,7 +538,7 @@ And run:
   yarn install
 ```
 
-### 8.8. Start the HTTP server
+### 7.9. Start the HTTP server
 
 Still inside the `~/go/traceability-framework/apps/server`, run:
 
@@ -554,7 +554,7 @@ The server is located in port 5000, and can be accessed locally by pointing your
 There's also a simple Postman collection and environment for convenience when making requests to the HTTP server.
 The collection and enviroment are located at `~/go/traceability-framework/apps/server/utils`.
 
-### 8.9. Execute transactions in the Blockchain network
+### 7.10. Execute transactions in the Blockchain network
 
 You can make requests to the HTTP server via its API. The example API has the following requests:
 
@@ -604,7 +604,7 @@ The requests that require creation and update of data will trigger transactions 
 Transaction data is returned for every request that triggers one.
 If no problem was found, you can build your own application on top of this traceability framework!
 
-## 9. TROUBLESHOOTING
+## 8. TROUBLESHOOTING
 
 The simplest way to troubleshoot is to remove all Docker artifacts and try again.
 Removing all Docker containers:
@@ -637,11 +637,11 @@ If nothing works, please feel free to ping the project's developer:
   personal email <sindelio@gmail.com>
 ```
 
-## 10. CONTRIBUTING
+## 9. CONTRIBUTING
 
 Please feel free to raise an issue or make a pull request to this framework.
 All contributions are much welcome!
 
-## 11. LICENSE
+## 10. LICENSE
 
 [MIT](https://github.com/sindelio/hyperledger-fabric-traceability-framework/blob/master/LICENSE)
